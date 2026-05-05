@@ -1,0 +1,27 @@
+{
+  "name": "interview-agent-platform",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Complete interview preparation AI agent platform",
+  "scripts": {
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm start",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "interview",
+    "agent",
+    "ai",
+    "job-preparation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
